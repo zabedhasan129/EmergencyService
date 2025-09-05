@@ -37,14 +37,15 @@ for (let btn of callButtons) {
         let hsitoryList = document.getElementById("callHistory")
         let div = document.createElement("div")
         div.innerHTML = `<div class="flex items-center rounded-lg p-1 mt-1 bg-[#FAFAFA]">
-                    <div class="flex justify-center gpa-[10px] items-center p-1">
-                            <div><p class="text-[6px] font-semibold">${name}</p>
-                            <p class="font-normal text-[2]">${number}</p></div>
-                            <p class="text-[5px]">${time}</p>
-                    </div>
+                            <div class="flex justify-between items-center gap-[150px] ">
+                                <div>
+                                    <p class="text-[20px] font-semibold">${name}</p>
+                                    <p class="font-normal text-[15px]">${number}</p>
+                                </div>
+                                <p class="text-[10px]">${time}</p>
+                            </div>
                     
-        
-                </div>`
+                        </div>`
         hsitoryList.append(div)
 
 
@@ -76,7 +77,7 @@ for (let btn of copyCounterBtn) {
         let texttoCopy = `Name: ${name} Number:${number}`
 
         navigator.clipboard.writeText(texttoCopy)
-        alert(`copied:${texttoCopy}`)
+        alert(`${texttoCopy}`)
 
 
 
