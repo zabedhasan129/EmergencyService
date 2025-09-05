@@ -36,15 +36,15 @@ for (let btn of callButtons) {
 
         let hsitoryList = document.getElementById("callHistory")
         let div = document.createElement("div")
-        div.innerHTML = `<div class="flex items-center rounded-lg p-1 mt-1 bg-[#FAFAFA]">
-                            <div class="flex justify-between items-center gap-[150px] ">
-                                <div>
-                                    <p class="text-[20px] font-semibold">${name}</p>
-                                    <p class="font-normal text-[15px]">${number}</p>
+        div.innerHTML = `<div class="rounded-lg p-1 mt-1 bg-[#FAFAFA]">
+                                <div class="flex justify-between items-center gpa-[50px]  p-1">
+                                    <div><p class="text-[15px] font-semibold">${name}</p>
+                                    <p class="font-normal text-[8]">${number}</p>
+                                    </div>
+                                    <p class="text-[15px]">${time}</p>
                                 </div>
-                                <p class="text-[10px]">${time}</p>
-                            </div>
                     
+        
                         </div>`
         hsitoryList.append(div)
 
